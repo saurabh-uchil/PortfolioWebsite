@@ -1,0 +1,51 @@
+
+.vidBtn,.vidBtn1,.vidBtn2,.vidBtn3,.vidBtn4{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    cursor: pointer;  
+    background: #D6253F;
+    color: white;
+}
+
+.trailer, .videoPopup, .videoPopup3, .videoPopup2, .videoPopup1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+      
+}
+.trailer video, #video4, #video3, #video2, #video1{
+    width: 650px;
+    max-width: 650px;
+    height: auto;
+    outline: none;
+    position: relative; 
+}
+.close, .cross, .cross3, .cross2, .cross1{
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 42px;
+}
+@media(max-width: 901px){
+    .trailer video, #video4, #video3, #video2, #video1{
+        max-width: 90%;
+    }
+}
+.myClass {
+       
+        visibility: visible;
+        opacity: 1;
+    }
