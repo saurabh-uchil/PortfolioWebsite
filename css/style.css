@@ -1,35 +1,36 @@
-:root{
- 
+:root {
+
     --primary-color: linear-gradient(-90deg, #d38312, #a83279);
     --primary-bgcolor: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-    --primary-cardlink: #000!important;
+    --primary-cardlink: #000 !important;
     --primary-cardbody: #e8eeff;
-    --primary-cardbodyfont: #000!important;
-    --primary-bodycolor: rgb(50,50,50);
+    --primary-cardbodyfont: #000 !important;
+    --primary-bodycolor: rgb(50, 50, 50);
     --primary-contentcolor: #000;
     --primary-buttoncolor: #D6253F;
-    --primary-timelinecolor: rgb(80,80,80);
+    --primary-timelinecolor: rgb(80, 80, 80);
     --primary-timelinefontcolor: #000;
-    --primary-navlinkhovercolor:#D6253F;  
+    --primary-navlinkhovercolor: #D6253F;
     --primary-textanimcolor: #d7e1ec;
     --primary-timelinedesccolor: lightblue;
-   }
-   .dark-theme{
-   --primary-color: linear-gradient(147deg, #000000 0%, #04619f 74%);
-   --primary-bgcolor:linear-gradient(315deg, #434343 10%, #070707 70%);
-   --primary-cardlink: #fff!important;
-   --primary-cardbody: #342424;
-   --primary-cardbodyfont: #fff!important;
-   --primary-bodycolor: #fff!important;
-   --primary-contentcolor: white;
-   --primary-buttoncolor: #04619f;
-   --primary-timelinecolor: #04619f;
-   --primary-timelinefontcolor: #fff;
-   --primary-navlinkhovercolor:#434343;
-   --primary-textanimcolor:  #070707;
-   --primary-timelinedesccolor: gray;
-   
-   /*
+}
+
+.dark-theme {
+    --primary-color: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    --primary-bgcolor: linear-gradient(315deg, #434343 10%, #070707 70%);
+    --primary-cardlink: #fff !important;
+    --primary-cardbody: #342424;
+    --primary-cardbodyfont: #fff !important;
+    --primary-bodycolor: #fff !important;
+    --primary-contentcolor: white;
+    --primary-buttoncolor: #04619f;
+    --primary-timelinecolor: #04619f;
+    --primary-timelinefontcolor: #fff;
+    --primary-navlinkhovercolor: #434343;
+    --primary-textanimcolor: #070707;
+    --primary-timelinedesccolor: gray;
+
+    /*
    linear-gradient(147deg, #000000 0%, #04619f 74%);
    linear-gradient(147deg, #000000 0%, #434343 74%)
    linear-gradient(315deg, #637081 0%, #7c98b3 74%);
@@ -41,21 +42,22 @@
    linear-gradient(315deg, #060606 0%, #303030 74%);
     
    */
-   
-   
-   
-   
-   }
-   
 
-*{
+
+
+
+}
+
+
+* {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
     scroll-behavior: smooth;
-    
+
 }
-body{
+
+body {
     background: var(--primary-bgcolor);
     margin: 0px;
     padding: 0px;
@@ -66,62 +68,67 @@ body{
 }
 
 
-h3,h4,p{
+h3,
+h4,
+p {
     color: var(--primary-contentcolor);
     font-weight: 500;
-    font-family:'Poppins';
+    font-family: 'Poppins';
 }
 
 
-nav{
+nav {
     position: sticky;
 }
 
-.bgred{
+.bgred {
     background: var(--primary-color);
-  }
+}
 
-.bg-custom{
+.bg-custom {
     width: 100%;
     display: flex;
     align-items: center;
-    background:linear-gradient(-90deg, #d38312, #a83279);
+    background: linear-gradient(-90deg, #d38312, #a83279);
 }
 
-.nav-link{
+.nav-link {
     font-size: 15px;
-    color: #fff!important;
+    color: #fff !important;
     font-weight: 500;
     margin-left: 20px;
 }
-.nav-link:hover{
-    color: tomato!important;
+
+.nav-link:hover {
+    color: tomato !important;
     border-bottom: solid 2px white;
     max-width: 100px;
 }
 
-.navbar-brand{
-    color: white!important;
+.navbar-brand {
+    color: white !important;
 }
-#moon{
+
+#moon {
     height: 30px;
     max-width: 30px;
     cursor: pointer;
     margin-left: 20px;
 }
 
-#geek{
+#geek {
     margin-top: 35px;
     margin-left: 100px;
 }
 
-.row{
+.row {
     margin: 25px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.col1{
+
+.col1 {
     position: relative;
     flex-basis: 60%;
     display: flex;
@@ -130,81 +137,86 @@ nav{
 
 
 /*Accordion*/
-.card,.card-header{
-    background-color: transparent!important;
-    border: none!important;
-    
-}
-.card{
-    box-shadow:0 2px 25px 0 rgba(110, 130, 208, 0.18);
+.card,
+.card-header {
+    background-color: transparent !important;
+    border: none !important;
+
 }
 
-.btn-link{
+.card {
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
+}
+
+.btn-link {
     width: 100%;
     height: 60px;
-    color:  var(--primary-cardlink);
-    font-weight: bold!important;
+    color: var(--primary-cardlink);
+    font-weight: bold !important;
     font-family: 'Poppins';
-    text-align: left!important;
-    text-decoration: none!important;
+    text-align: left !important;
+    text-decoration: none !important;
 }
-.card-body{
+
+.card-body {
     background: var(--primary-cardbody);
     color: var(--primary-cardbodyfont);
     font-family: 'Poppins';
 }
 
 /*Video Slider*/
-.videoWrapper{
+.videoWrapper {
     width: 80%;
     max-width: 700px;
     margin: 3em auto;
     border: 5px solid #D6253F;
 }
 
-.vidcontainer{
+.vidcontainer {
     width: 100%;
     max-width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-    
+
     position: relative;
 }
 
-.vidcontainer video{
+.vidcontainer video {
     width: 100%;
     max-width: 100%;
     height: 100%;
     position: absolute;
 }
 
-.vidcontainer .navigation{
-    position:absolute;
+.vidcontainer .navigation {
+    position: absolute;
     bottom: 0px;
-    left: 50% ;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.vidcontainer .navigation li{
+.vidcontainer .navigation li {
     list-style: none;
     cursor: pointer;
-    margin: 25px 10px 25px 10px ;
+    margin: 25px 10px 25px 10px;
     border-radius: 4px;
     background: #D6253F;
     padding: 3px 3px 3px 3px;
-    opacity: 0.7; 
+    opacity: 0.7;
     transition: 0.5s;
     overflow: hidden;
-    
+
 }
 
 /*resume and paper buttons*/
-#resumedwnld, #paperlink, #resumedwnld:visited {
+#resumedwnld,
+#paperlink,
+#resumedwnld:visited {
     background-color: #D6253F;
     color: white;
     width: 130px;
@@ -217,24 +229,34 @@ nav{
 }
 
 /*education images*/
-#graduate{
+#graduate {
     max-height: 200px;
     min-width: 100px;
-    margin-left:135px;
+    margin-left: 135px;
     margin-top: 100px;
-    
+
 }
 
-#travel{
-margin-left: 120px;
-margin-top: 5px;
-border-radius: 5px;
+#travel {
+    margin-left: 120px;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 /*footer*/
-.footer{
+.footer {
     text-align: center;
     font-family: sans-serif;
     color: darkgray;
 }
 
+
+.girl {
+    width: 30%;
+}
+
+@media (max-width: 479px) {
+    .girl {
+        width: 80%;
+    }
+}

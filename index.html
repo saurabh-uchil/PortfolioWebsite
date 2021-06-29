@@ -1,350 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/socialmedialinks.css">
-    <link rel="stylesheet" href="css/popupVideo.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    
-    <title>Saurabh's Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/socialmedialinks.css">
+  <link rel="stylesheet" href="css/popupVideo.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <title>Saurabh's Portfolio Website</title>
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-sm navbar-dark bgred sticky-top">
+    <a class="navbar-brand" href="#"><img src="images/icons8-super-mario.svg">Saurabh Uchil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#paper">Paper</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#myresume">My Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto"><img id="moon" src="images/moon.png" onclick='changeImage();'>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="section mt-4">
+    <div class="container-fluid">
+      <p>I am an aspiring software/web developer. I have done my Bachelor's in Computer Engineering and my Masters in
+        Information Technology. During this time I had a chance to work on many projects and assignments. This projects
+        helped me get a comprehensive understanding of the software development life cycle, agile principles, concepts
+        of
+        scrum etc. I have worked on projects with java, python, html, react js, swift, c++, mysql, cloud platforms like
+        Google cloud, Amazon web services. Apart from this I am passionate about learning new skills and improving my
+        current skill set. I am currently looking for an opportunity that would help me enhance my current knowledge and
+        improve myself.
+      </p>
+      <div class="wrapper">
+        <div class="button">
+          <div class="icon"><i class="fa fa-github" style="font-size:36px"></i></div>
+          <span><a class="git" href="https://github.com/rmit-s3710386-saurabh-uchil/Saurabh-Uchil">GitHub</a></span>
+        </div>
+        <div class="button">
+          <div class="icon"><i class="fa fa-facebook-official" style="font-size:36px98"></i></div>
+          <span><a class="fb" href="https://m.facebook.com/saurabh.uchil">Facebook</a></span>
+        </div>
+        <div class="button">
+          <div class="icon"><i class="fa fa-linkedin-square" style="font-size:36px6a8"></i></div>
+          <span><a class="linkedin" href="https://www.linkedin.com/in/saurabh-uchil07/">Linked In</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <img src="images/geek.png">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Fitcus Web Application
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  It is web application that acts as a tool which enables the coaches with the ability to rapidly
+                  develop workouts which can then be published to the app itself and be used by the end users of the
+                  Fitcus app, thereby essentially closing the gap between the coaches and the app itself. Based on the
+                  requirements, the web application features a workout builder that essentially helps the coaches to
+                  build workouts where they can set rules to each workout, upload images for the workouts and set
+                  difficulty levels for each workout. There is also an administrator page which helps moderating the
+                  kind of workouts being pushed to the app and to check whether they are appropriate.
+
+                  <div class="popup1">
+                    <button type="button" class="vidBtn1">Watch Video</button>
+                    <img src="images/icons8-github.svg" alt="">
+                    <div class="videoPopup1">
+                      <video src="videos/v1.mp4" controls="true" id="video1"></video>
+                      <span class="cross1">&times;</span>
+                    </div>
+                    <script src="js/videoPopup1.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Snakes And Eagles(Strategy Game)
+
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  EagleVsShark is a multiplayer board game in which the objective is to save human from sharks, which
+                  will be done by eagles using possible strategies. Both Eagle and Shark can capture each other’s
+                  pieces. Shark must capture Eagle before it can take human piece to the land.
+                  Creational Patterns like Abstract Factory and Singleton, Structural Patterns like Decorator and
+                  Facade, Behavioral Patterns like Memento.
+                  <div class="popup2">
+                    <button type="button" class="vidBtn2">Watch Video</button>
+                    <img src="images/icons8-github.svg" alt="">
+                    <div class="videoPopup2">
+                      <video src="videos/v2.mp4" controls="true" id="video2"></video>
+                      <span class="cross2">&times;</span>
+                    </div>
+                    <script src="js/videoPopup2.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Pocket CA(IOS App using Swift)
+
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Pocket CA is an app that lets you organize and manage bills with ease.Log in to Pocket CA while you
+                  have some free time and add a new entry of any purchase you just made. Select the category for e.g.
+                  groceries, bills, rent etc. You can also attach the photo of the bill if you wish to. You can either
+                  choose to create entry daily or monthly according to your convenience.Keep using the app regularly and
+                  generate your expenditure report at the end of the week or month. This report can help you to manage
+                  your budget and spending’s.Pie chart to show the statistics of the users spending makes the app more
+                  user friendly.
+                  <br>
+                  <div class="popup3">
+                    <button type="button" class="vidBtn3">Watch Video</button>
+                    <img src="images/icons8-github.svg" alt="">
+                    <div class="videoPopup3">
+                      <video src="videos/v3.mp4" controls="true" id="video3"></video>
+                      <span class="cross3">&times;</span>
+                    </div>
+                    <script src="js/videoPopup3.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Chat Application
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  Let’s Chat is basically a web chat application that allows the users to register and chat among the
+                  other users. It is basically a chatting platform that allows people to keep in touch over the medium
+                  of internet.
+                  <br>
+                  <div class="popup4">
+                    <button type="button" class="vidBtn4">Watch Video</button>
+                    <img src="images/icons8-github.svg" alt="">
+                    <div class="videoPopup">
+                      <video src="videos/v4.mp4" controls="true" id="video4"></video>
+                      <span class="cross">&times;</span>
+                    </div>
+                    <script src="js/videoPopup4.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Chess Like Game
+
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                  Its a mini chess games with only three kind of pieces rook, bishop and the knight. Both players are
+                  allowed to set a maximum number of moves before the game starts. The player with more points by the
+                  end of all the moves wins the game.
+                  This game is built using the javafx and OOP concepts of java
+                  <div class="popup">
+                    <br><button class="vidBtn">Watch Video</button>
+                    <img src="images/icons8-github.svg" alt="">
+                    <div class="trailer">
+                      <video src="videos/v5.mp4" controls="true"></video>
+                      <span class="close">&times;</span>
+                    </div>
+                    <script src="js/videoPopUp5.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="section mt-4">
+    <div class="container-fluid">
+      <div class="projectDemo">
+        <h3>Project Demo</h3>
+        <script src="js/video.js"></script>
+        <div class="videoWrapper">
+          <div class="vidcontainer">
+            <video id="slider">
+              <source src="videos/v1.mp4" type="video/mp4">
+            </video>
+            <ul class="navigation">
+
+              <li onclick="getVideoUrl('videos/v1.mp4')"></li>
+              <li onclick="getVideoUrl('videos/v2.mp4')"></li>
+              <li onclick="getVideoUrl('videos/v3.mp4')"></li>
+              <li onclick="getVideoUrl('videos/v4.mp4')"></li>
+              <li onclick="getVideoUrl('videos/v5.mp4')"></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Paper Published -->
+
+  <div class="section mt-4">
+    <div class="container-fluid">
+      <div id="paper">
+        <h3>Paper Published</h3>
+        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+          butcher
+          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+          heard of them accusamus labore sustainable VHS.
+        </p>
+        <a href="https://www.ijetae.com/files/Volume7Issue2/IJETAE_0217_16.pdf" id="paperlink">My Paper</a>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paper Published -->
+
+
+  <div class="section mt-4">
+    <div class="container-fluid">
+      <div id="myresume">
+        <h3 id="resume">My Resume</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a
+          type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+          versions
+          of Lorem Ipsum
+        </p>
+        <div class="resume">
+          <a href="docs/Resume.docx" id="resumedwnld" download="Resume">My Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Education -->
+
+  <div class="section mt-4">
+    <div class="container-fluid">
+      <h3 id="background">Education</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div class="text-center">
+            <img class="girl" src="images/vectorpaint.svg" alt="Cup of coffee on saucer">
+            <img src="images/indtoaus.png">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12">
+          <div class="box">
+            <!-- The Timeline -->
+            <ul class="timeline">
+
+              <!-- Item 1 -->
+              <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                    <span class="flag">RMIT, Melbourne</span>
+                    <span class="time-wrapper"><span class="time">2018 - 2020</span></span>
+                  </div>
+                  <div class="desc">Masters in Information Technology</div>
+                </div>
+              </li>
+              <!-- Item 2 -->
+              <li>
+                <div class="direction-l">
+                  <div class="flag-wrapper">
+                    <span class="flag">Marine Electricals </span>
+                    <span class="time-wrapper"><span class="time">2013 - 2017</span></span>
+                  </div>
+                  <div class="desc">Trainee Engineer</div>
+                </div>
+              </li>
+
+              <!-- Item 3 -->
+              <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                    <span class="flag">Fortune Tech </span>
+                    <span class="time-wrapper"><span class="time">2017 - 2018</span></span>
+                  </div>
+                  <div class="desc">Support Engineer(Internship)</div>
+                </div>
+              </li>
+
+
+              <!-- Item 4 -->
+              <li>
+                <div class="direction-l">
+                  <div class="flag-wrapper">
+                    <span class="flag">Mumbai University</span>
+                    <span class="time-wrapper"><span class="time">2013 - 2017</span></span>
+                  </div>
+                  <div class="desc">Bachelor's in Computer Engineering </div>
+                </div>
+              </li>
+
+              <!-- Item 5 -->
+              <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                    <span class="flag">TVM Jr College</span>
+                    <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+                  </div>
+                  <div class="desc">Higher Secondary Level Education</div>
+                </div>
+              </li>
+
+              <!-- Item 6 -->
+              <li>
+                <div class="direction-l">
+                  <div class="flag-wrapper">
+                    <span class="flag">Children's Academy</span>
+                    <span class="time-wrapper"><span class="time">2000-2010</span></span>
+                  </div>
+                  <div class="desc">Primary and Secondary Level Education </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education -->
+
+
+  <!-- Footer -->
+
+  <div class="section mt-4">
+    <div class="container-fluid">
+      <div id="foot" class="footer">
+        <p>© All Copyrights reserved</p>
+        <p>Designed And Developed By Saurabh Uchil</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+
   <script src="js/darkModeToggle.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
- 
-    <nav class="navbar navbar-expand-sm navbar-dark bgred sticky-top">
-      <a class="navbar-brand" href="#"><img src="images/icons8-super-mario.svg">Saurabh Uchil</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">My Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#paper">Paper</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#myresume">My Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          </ul>
-          <ul class="navbar-nav ml-auto"><img id="moon" src="images/moon.png" onclick='changeImage();'>
-         </ul>        
-      </div>
-    </nav>
-  
-  <div id="about">
-    
-    <p>I am an aspiring software/web developer. I have done my Bachelor's in Computer Engineering and my Masters in Information Technology. During this time I had a chance to work on many projects and assignments. This projects helped me get a comprehensive understanding of the software development life cycle, agile principles, concepts of scrum etc. I have worked on projects with java, python, html, react js, swift, c++, mysql, cloud platforms like Google cloud, Amazon web services. Apart from this I am passionate about learning new skills and improving my current skill set. I am currently looking for an opportunity that would help me enhance my current knowledge and improve myself. </p>
-    <div class="wrapper">
-      <div class="button">
-        <div class="icon"><i class="fa fa-github" style="font-size:36px"></i></div>
-        <span><a  class="git" href="https://github.com/rmit-s3710386-saurabh-uchil/Saurabh-Uchil">GitHub</a></span>
-      </div>
-      <div class="button">
-        <div class="icon"><i class="fa fa-facebook-official" style="font-size:36px98"></i></div>
-        <span><a  class="fb" href="https://m.facebook.com/saurabh.uchil">Facebook</a></span>
-      </div>
-      <div class="button">
-        <div class="icon"><i class="fa fa-linkedin-square" style="font-size:36px6a8"></i></div>
-        <span><a  class="linkedin" href="https://www.linkedin.com/in/saurabh-uchil07/">Linked In</a></span>
-      </div>
-    </div>
-    </div>
-  </div>
-  <div id="projects">
-    <h3>My Projects</h3>
-    <div class="row" id="row1">
-      <div class="col-md-6">
-        <img src="images/geek.png" id="geek">
-      </div>
-      <div class="col-md-6">
-        <div class="accordion-border">
-         <div id="accordion">
-           <div class="card">
-             <div class="card-header" id="headingOne">
-               <h5 class="mb-0">
-                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   Fitcus Web Application
-                 </button>
-               </h5>
-             </div>
-         
-             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-               <div class="card-body">
-                It is web application that acts as a tool which enables the coaches with the ability to rapidly develop workouts which can then be published to the app itself and be used by the end users of the Fitcus app, thereby essentially closing the gap between the coaches and the app itself. Based on the requirements, the web application features a workout builder that essentially helps the coaches to build workouts where they can set rules to each workout, upload images for the workouts and set difficulty levels for each workout. There is also an administrator page which helps moderating the kind of workouts being pushed to the app and to check whether they are appropriate.
-              <br>
-              <div class="popup1">
-                <button type="button" class="vidBtn1">Watch Video</button>
-                <img src="images/icons8-github.svg" alt=""> 
-                <div class="videoPopup1">
-                  <video src="videos/v1.mp4" controls="true" id="video1"></video>
-                  <span class="cross1">&times;</span>
-                </div>
-                <script src="js/videoPopup1.js"></script>
-               </div>
-              </div>
-             </div>
-           </div>
-           <div class="card">
-             <div class="card-header" id="headingTwo">
-               <h5 class="mb-0">
-                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Snakes And Eagles(Strategy Game)
-                 </button>
-               </h5>
-             </div>
-             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-               <div class="card-body">
-                 EagleVsShark is a multiplayer board game in which the objective is to save human from sharks, which will be done by eagles using possible strategies. Both Eagle and Shark can capture each other’s pieces. Shark must capture Eagle before it can take human piece to the land.
-                 Creational Patterns like Abstract Factory and Singleton, Structural Patterns like Decorator and Facade, Behavioral Patterns like Memento.
-                 <div class="popup2">
-                  <button type="button" class="vidBtn2">Watch Video</button>
-                  <img src="images/icons8-github.svg" alt=""> 
-                  <div class="videoPopup2">
-                    <video src="videos/v2.mp4" controls="true" id="video2"></video>
-                    <span class="cross2">&times;</span>
-                  </div>
-                  <script src="js/videoPopup2.js"></script>
-                 </div>
-                </div>
-             </div>
-           </div>
-           <div class="card">
-             <div class="card-header" id="headingThree">
-               <h5 class="mb-0">
-                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                   Pocket CA(IOS App using Swift)
-                 </button>
-               </h5>
-             </div>
-             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-               <div class="card-body">
-                 Pocket CA is an app that lets you organize and manage bills with ease.Log in to Pocket CA while you have some free time and add a new entry of any purchase you just made. Select the category for e.g. groceries, bills, rent etc. You can also attach the photo of the bill if you wish to. You can either choose to create entry daily or monthly according to your convenience.Keep using the app regularly and generate your expenditure report at the end of the week or month. This report can help you to manage your budget and spending’s.Pie chart to show the statistics of the users spending makes the app more user friendly.
-                 <br>
-                 <div class="popup3">
-                  <button type="button" class="vidBtn3">Watch Video</button>
-                  <img src="images/icons8-github.svg" alt=""> 
-                  <div class="videoPopup3">
-                    <video src="videos/v3.mp4" controls="true" id="video3"></video>
-                    <span class="cross3">&times;</span>
-                  </div>
-                  <script src="js/videoPopup3.js"></script>
-                </div>
-             </div>
-           </div>
-           <div class="card">
-             <div class="card-header" id="headingFour">
-               <h5 class="mb-0">
-                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                   Chat Application(Using PHP and AWS Web Services)
-                 </button>
-               </h5>
-             </div>
-             <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-               <div class="card-body">
-                 Let’s Chat is basically a web chat application that allows the users to register and chat among the other users. It is basically a chatting platform that allows people to keep in touch over the medium of internet. 
-                 <br>
-                 <div class="popup4">
-                  <button type="button" class="vidBtn4">Watch Video</button>
-                  <img src="images/icons8-github.svg" alt=""> 
-                  <div class="videoPopup">
-                    <video src="videos/v4.mp4" controls="true" id="video4"></video>
-                    <span class="cross">&times;</span>
-                  </div>
-                <script src="js/videoPopup4.js"></script>
-                 </div>
-                </div>
-             </div>
-           </div>
-           <div class="card">
-             <div class="card-header" id="headingFive">
-               <h5 class="mb-0">
-                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
-                  Chess Like Game
-                 </button>
-               </h5>
-             </div>
-         
-             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-               <div class="card-body">
-                 Its a mini chess games with only three kind of pieces rook, bishop and the knight. Both players are allowed to set a maximum number of moves before the game starts. The player with more points by the end of all the moves wins the game.
-                 This game is built using the javafx and OOP concepts of java
-                 
-                 
-                 <div class="popup">
-                  <br><button class="vidBtn">Watch Video</button>
-                  <img src="images/icons8-github.svg" alt="">
-                  
-                  <div class="trailer">
-                      <video src="videos/v5.mp4" controls="true"></video>    
-                      <span class="close">&times;</span>
-                  </div>
-                  <script src="js/videoPopUp5.js"></script>
-                   
-              
-                 </div>
-                 
-                </div>
-             </div>
-           </div>
-           
-
-         </div>
-        </div>
-    
-     </div>
-    </div>
-    </div>
-  </div>
-  <div class="projectDemo">
-    <h3>Project Demo</h3>
-    <script src="js/video.js"></script>
-    <div class="videoWrapper">
-      <div class="vidcontainer">
-        <video id="slider">
-          <source src="videos/v1.mp4" type="video/mp4"> 
-        </video>
-        <ul class="navigation">
-         
-          <li onclick="getVideoUrl('videos/v1.mp4')"></li>
-          <li onclick="getVideoUrl('videos/v2.mp4')"></li>
-          <li onclick="getVideoUrl('videos/v3.mp4')"></li>
-          <li onclick="getVideoUrl('videos/v4.mp4')"></li>
-          <li onclick="getVideoUrl('videos/v5.mp4')"></li>
-          
-      </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="paper">
-    <br><h3>Paper Published</h3>
-    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-   </p>
-    <a href="https://www.ijetae.com/files/Volume7Issue2/IJETAE_0217_16.pdf" id="paperlink">My Paper</a>
-    <br>
-    <br>
-   </div>
-
-   <div id="myresume">
-    <h3 id="resume">My Resume</h3>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-    </p>
-    <div class="resume">
-     <a href="docs/Resume.docx" id="resumedwnld" download="Resume">My Resume</a>
-    </div>
-   </div>
-   
-  <div id="education">
-    <br><h3 id="background">Education</h3>
-    
-      <div class="tl">
-        <div class="row">
-          <div class="col">
-              <img id="graduate" src="images/vectorpaint.svg" alt="Cup of coffee on saucer">
-              <br><img id="travel" src="images/indtoaus.png">
-          </div>
-          <div class="col">
-             <!-- The Timeline -->
-            <ul class="timeline">
-      
-              <!-- Item 1 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="flag">RMIT, Melbourne</span>
-              <span class="time-wrapper"><span class="time">2018 - 2020</span></span>
-            </div>
-            <div class="desc">Masters in Information Technology</div>
-          </div>
-        </li>
-        <!-- Item 2 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="flag">Marine Electricals </span>
-              <span class="time-wrapper"><span class="time">2013 - 2017</span></span>
-            </div>
-            <div class="desc">Trainee Engineer</div>
-          </div>
-        </li>
-      
-        <!-- Item 3 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="flag">Fortune Tech </span>
-              <span class="time-wrapper"><span class="time">2017 - 2018</span></span>
-            </div>
-            <div class="desc">Support Engineer(Internship)</div>
-          </div>
-        </li>
-      
-
-        <!-- Item 4 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="flag">Mumbai University</span>
-              <span class="time-wrapper"><span class="time">2013 - 2017</span></span>
-            </div>
-            <div class="desc">Bachelor's in Computer Engineering </div>
-          </div>
-        </li>
-      
-        <!-- Item 5 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="flag">TVM Jr College</span>
-              <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-            </div>
-            <div class="desc">Higher Secondary Level Education</div>
-          </div>
-          </li>
-          
-          <!-- Item 6 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="flag">Children's Academy</span>
-              <span class="time-wrapper"><span class="time">2000-2010</span></span>
-            </div>
-            <div class="desc">Primary and Secondary Level Education </div>
-          </div>
-        </li>
-            </ul>
-          </div>
-          
-        </div>
-      </div>
-
-  </div>
-
-  <br><br>
-<div id="foot" class="footer">
-  <p>© All Copyrights reserved</p>
-  <p>Designed And Developed By Saurabh Uchil</p>
-</div>
 </body>
+
 </html>
