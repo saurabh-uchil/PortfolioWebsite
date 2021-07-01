@@ -34,7 +34,7 @@
 }
 
 .wrapper .button:nth-child(3):hover .icon{
-    background:#0e76a8;
+    background:#4885ed;
 }
 
 .wrapper .button .icon i{
@@ -63,9 +63,9 @@
     width:200px;
 }
 
-.fb{
+.gmail{
     text-decoration: none;
-    color: #4e71ba;
+    color: #4885ed;
 }
 .git{
     text-decoration: none;
@@ -76,9 +76,9 @@
     color:#0e76a8;
 }
 
-.fb:hover{
+.gmail:hover{
     text-decoration: none;
-    color: #4e71ba;
+    color: #4885ed;
 }
 .git:hover{
     text-decoration: none;
@@ -88,5 +88,6 @@
     text-decoration: none;
     color:#0e76a8;
 }
+
 
 

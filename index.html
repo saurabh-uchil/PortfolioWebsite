@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <!-- Nav Bar -->
   <nav class="navbar navbar-expand-sm navbar-dark bgred sticky-top">
     <a class="navbar-brand" href="#"><img src="images/icons8-super-mario.svg">Saurabh Uchil</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -32,16 +33,16 @@
           <a class="nav-link" href="#about">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">My Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#paper">Paper</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#myresume">My Resume</a>
+          <a class="nav-link" href="#myresume">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#background">Education</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto"><img id="moon" src="images/moon.png" onclick='changeImage();'>
@@ -49,9 +50,10 @@
     </div>
   </nav>
 
-
+<!-- About Me -->
   <div class="section mt-4">
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
+      
       <p>I am an aspiring software/web developer. I have done my Bachelor's in Computer Engineering and my Masters in
         Information Technology. During this time I had a chance to work on many projects and assignments. This projects
         helped me get a comprehensive understanding of the software development life cycle, agile principles, concepts
@@ -63,23 +65,24 @@
       </p>
       <div class="wrapper">
         <div class="button">
-          <div class="icon"><i class="fa fa-github" style="font-size:36px"></i></div>
-          <span><a class="git" href="https://github.com/rmit-s3710386-saurabh-uchil/Saurabh-Uchil">GitHub</a></span>
-        </div>
-        <div class="button">
-          <div class="icon"><i class="fa fa-facebook-official" style="font-size:36px98"></i></div>
-          <span><a class="fb" href="https://m.facebook.com/saurabh.uchil">Facebook</a></span>
-        </div>
-        <div class="button">
           <div class="icon"><i class="fa fa-linkedin-square" style="font-size:36px6a8"></i></div>
           <span><a class="linkedin" href="https://www.linkedin.com/in/saurabh-uchil07/">Linked In</a></span>
+        </div>
+        <div class="button">
+          <div class="icon"><i class="fa fa-github" style="font-size:36px"></i></div>
+          <span><a class="git" href="https://github.com/saurabh-uchil">GitHub</a></span>
+        </div>
+        <div class="button">
+          <div class="icon"><i class="fa fa-google" style="font-size:36px98"></i></div>
+          <span><a class="gmail" href="mailto:saurabh.uchil@gmail.com">Gmail</a></span>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Projects -->
   <div class="section">
-    <div class="container-fluid">
+    <div class="container-fluid" id="projects"> 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <img src="images/geek.png">
@@ -96,7 +99,7 @@
                 </h2>
               </div>
 
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                   It is web application that acts as a tool which enables the coaches with the ability to rapidly
                   develop workouts which can then be published to the app itself and be used by the end users of the
@@ -104,11 +107,12 @@
                   requirements, the web application features a workout builder that essentially helps the coaches to
                   build workouts where they can set rules to each workout, upload images for the workouts and set
                   difficulty levels for each workout. There is also an administrator page which helps moderating the
-                  kind of workouts being pushed to the app and to check whether they are appropriate.
-
+                  kind of workouts being pushed to the app and to check whether they are appropriate. The backend is supported by Google Firebase. 
                   <div class="popup1">
                     <button type="button" class="vidBtn1">Watch Video</button>
-                    <img src="images/icons8-github.svg" alt="">
+                    <button type="button" class="visitPg" onclick="location.href='https://testfitcus.firebaseapp.com/'" type="button">Visit Page</button>
+
+
                     <div class="videoPopup1">
                       <video src="videos/v1.mp4" controls="true" id="video1"></video>
                       <span class="cross1">&times;</span>
@@ -137,7 +141,7 @@
                   Facade, Behavioral Patterns like Memento.
                   <div class="popup2">
                     <button type="button" class="vidBtn2">Watch Video</button>
-                    <img src="images/icons8-github.svg" alt="">
+                    <a href="https://github.com/saurabh-uchil/EaglesVsSharks"><img src="images/icons8-github.svg" alt=""></a>
                     <div class="videoPopup2">
                       <video src="videos/v2.mp4" controls="true" id="video2"></video>
                       <span class="cross2">&times;</span>
@@ -169,7 +173,7 @@
                   <br>
                   <div class="popup3">
                     <button type="button" class="vidBtn3">Watch Video</button>
-                    <img src="images/icons8-github.svg" alt="">
+                    <a href="https://github.com/saurabh-uchil/ReceiptApp"><img src="images/icons8-github.svg" alt=""></a>
                     <div class="videoPopup3">
                       <video src="videos/v3.mp4" controls="true" id="video3"></video>
                       <span class="cross3">&times;</span>
@@ -199,7 +203,7 @@
                   <br>
                   <div class="popup4">
                     <button type="button" class="vidBtn4">Watch Video</button>
-                    <img src="images/icons8-github.svg" alt="">
+                    <a href="https://github.com/saurabh-uchil/WebChatApplication"><img src="images/icons8-github.svg" alt=""></a>
                     <div class="videoPopup">
                       <video src="videos/v4.mp4" controls="true" id="video4"></video>
                       <span class="cross">&times;</span>
@@ -229,7 +233,7 @@
                   This game is built using the javafx and OOP concepts of java
                   <div class="popup">
                     <br><button class="vidBtn">Watch Video</button>
-                    <img src="images/icons8-github.svg" alt="">
+                    <a href="https://github.com/saurabh-uchil/MiniChessGame"><img src="images/icons8-github.svg" alt=""></a>
                     <div class="trailer">
                       <video src="videos/v5.mp4" controls="true"></video>
                       <span class="close">&times;</span>
@@ -258,8 +262,8 @@
         <script src="js/video.js"></script>
         <div class="videoWrapper">
           <div class="vidcontainer">
-            <video id="slider">
-              <source src="videos/v1.mp4" type="video/mp4">
+            <video id="slider" autoplay="true">
+              <source src="videos/v1.mp4" type="video/mp4" >
             </video>
             <ul class="navigation">
 
@@ -284,13 +288,9 @@
     <div class="container-fluid">
       <div id="paper">
         <h3>Paper Published</h3>
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-          heard of them accusamus labore sustainable VHS.
+        <p>In the final year of my bachelors degree I was part of a group project where we made an effort to create a device that would benefit the physically challenged people who uses sign language to communicate.
+          This project uses the gesture recognition technique to convert the signs to give a voice output. The research paper of our group was accepted and published to the International Journal of Emerging Technology and Advanced Engineering which is an online open access journal.
+          The paper can be accessed using the button below. 
         </p>
         <a href="https://www.ijetae.com/files/Volume7Issue2/IJETAE_0217_16.pdf" id="paperlink">My Paper</a>
         <br>
@@ -299,7 +299,7 @@
     </div>
   </div>
 
-  <!-- Paper Published -->
+  <!-- Resume -->
 
 
   <div class="section mt-4">
@@ -307,18 +307,11 @@
       <div id="myresume">
         <h3 id="resume">My Resume</h3>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make a
-          type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-          containing
-          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-          versions
-          of Lorem Ipsum
+        I am looking for opportunities as a sofware engineer and I am available for work immediately. You can contact me at linked in or email me at above gien email address.
+        My resume can be dowmloaded from here. 
         </p>
         <div class="resume">
-          <a href="docs/Resume.docx" id="resumedwnld" download="Resume">My Resume</a>
+          <a href="docs/Resume.pdf" id="resumedwnld" download="Resume">My Resume</a>
         </div>
       </div>
     </div>
